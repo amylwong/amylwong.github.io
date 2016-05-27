@@ -24,9 +24,10 @@
 .bg:hover {
   background-image: url('../images/front.jpg');
 }
-.bg .container {
+
+#headline {
   position: relative;
-  top:100px;
+  top:70px;
 }
 
 .bg h1 {
@@ -41,6 +42,15 @@
   color: #fff;
 }
 
+.content {
+  margin-top: 50px;
+}
+
+.about-me {
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
 #largeImgPanel {
     text-align: center;
     display: none;
@@ -51,8 +61,21 @@
 }
 
 #model {
-    width: 300px; /* you can use % */
+    width: 300px;
     height: auto;
+
+
+    display: block;
+    bottom: -30px;
+    line-height: 25pt;
+    text-align: center;
+}
+
+#model .simple-caption:hover {
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
 }
 
 button {

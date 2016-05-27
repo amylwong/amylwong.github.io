@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description">
+  <meta name="description" content="Amy Wong's page">
   <title>Amy Wong</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/custom.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
   <link rel="shortcut icon" href="favicon.ico" >
 </head>
@@ -30,13 +32,26 @@
         </div>
     </nav>
 
-    <div class="about-me" id="about">
-        <div class="container">
+    <div class="container">
         <center>
-            <br>
+            <br><br><br>
+            <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" data-target="#digital">Digital</button>
+            <div id="digital" class="collapse">
+            <h3>Sherlock Fan Art</h3>
+            <img src="images/sherlock.jpg" style="cursor:pointer" onclick="showImage(this.src,'images/images/sherlock.jpg');">
+       
+            </div>
+            <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" data-target="#traditional">Traditional</button>
+            <div id="traditional" class="collapse">
+                <p>Coming soon.
 
-            Texttexttext
-        </div>
+                </p>
+            </div>
+
+           <div id="largeImgPanel" onclick="this.style.display='none'">
+                        <img id="largeImg"style="height:100%; margin:0; padding:0;" />
+                    </div>
+
         </center>
     </div>
     
