@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Amy Wong's page">
+  <meta name="description">
   <title>Amy Wong</title>
 
-  <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/custom.css" type="text/css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="shortcut icon" href="favicon.ico" >
+  <script src="js/custom.js"></script>
 </head>
 
 
@@ -34,11 +35,77 @@
         <div class="container">
         <center>
             <br><br>
+            <div id="bandits">
+                <h2>Bandits (2015)</h2>
+                <p>CNM 190 Project</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DssS3vTlDao" frameborder="0" allowfullscreen></iframe>
 
-            <h3>Bandits (2015)</h3>
-            <a href="https://youtu.be/DssS3vTlDao">Watch here!</a>
-            <h3>Clothesline (2013)</h3>
-            <a href="https://youtu.be/H2cUo6zG4q0">Watch here!</a>
+                <div class="container">
+                  <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" data-target="#3dassets1">3D Assets & Set Dressing</button>
+                  <div id="3dassets1" class="collapse">
+                      <div class="col-md-4">
+                          <div class="thumbnail">
+                              <img src="images/models/bike.png" id="model" style="cursor:pointer" onclick="showImage(this.src,'images/models/bike.png');">
+                          </div>
+                          <div class="thumbnail">
+                              <img src="images/models/binocular.png" id="model" style="cursor:pointer" onclick="showImage(this.src,'images/models/binocular.png');">
+                          </div>  
+                          <div class="thumbnail">
+                              <img src="images/models/frame.png" id="model" style="cursor:pointer" onclick="showImage(this.src,'images/models/frame.png');">
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="thumbnail">
+                              <img src="images/models/kitchenprops.png" id="model" style="cursor:pointer" onclick="showImage(this.src,'images/models/kitchenprops.png');">
+                          </div>
+                          <div class="thumbnail">
+                              <img src="images/models/couch.png" id="model" style="cursor:pointer" onclick="showImage(this.src,'images/models/couch.png');">
+                          </div>  
+                          <div class="thumbnail">
+                              <img src="images/models/poweroutlet.png" id="model" style="cursor:pointer" onclick="showImage(this.src,'images/models/poweroutlet.png');">
+                          </div> 
+                      </div>
+                      <div class="col-md-4">
+                          <div class="thumbnail">
+                              <img src="images/models/livingroomprops.png" id="model" style="cursor:pointer" onclick="showImage(this.src,'images/models/livingroomprops.png');">
+                          </div> 
+                          <div class="thumbnail">
+                              <img src="images/models/collar.png" id="model" style="cursor:pointer" onclick="showImage(this.src,'images/models/collar.png');">
+                          </div>  
+                          <div class="thumbnail">
+                              <img src="images/models/statue.png" id="model" style="cursor:pointer" onclick="showImage(this.src,'images/models/statue.png');">
+                          </div> 
+                      </div>
+
+                      <div id="largeImgPanel" onclick="this.style.display='none'">
+                          <img id="largeImg"style="height:100%; margin:0; padding:0;" />
+                      </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" data-target="#blendshapes">Blend Shapes</button>
+                  <div id="blendshapes" class="collapse">
+                      <div class="col-md-12">
+                          <div class="thumbnail">
+                              <img src="images/blendshapes/sneaks.png">
+                          </div>
+                          <div class="thumbnail">
+                              <img src="images/blendshapes/tuffs.png">
+                          </div>
+                      </div>
+
+                      </div>
+
+                      <div id="largeImgPanel" onclick="this.style.display='none'">
+                          <img id="largeImg"style="height:100%; margin:0; padding:0;" />
+                      </div>
+                  </div>
+                </div>
+
+            <h2>Clothesline (2013)</h2>
+            <p>UCBUGG Project</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/H2cUo6zG4q0" frameborder="0" allowfullscreen></iframe>
         </div>
         </center>
     </div>
