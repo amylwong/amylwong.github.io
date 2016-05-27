@@ -15,15 +15,15 @@
 }
 
 .bg {
-  background-image: url('../images/frontbw.jpg');
+  background-image: url('../images/front.jpg');
   height: 750px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bg:hover {
+/*.bg:hover {
   background-image: url('../images/front.jpg');
-}
+}*/
 
 #headline {
   position: relative;
@@ -58,24 +58,6 @@
     z-index: 100;
     top: 0; left: 0; width: 100%; height: 100%;
     background-color: rgba(100,100,100, 0.5);
-}
-
-#model {
-    width: 300px;
-    height: auto;
-
-
-    display: block;
-    bottom: -30px;
-    line-height: 25pt;
-    text-align: center;
-}
-
-#model .simple-caption:hover {
-    -moz-transform: translateY(-100%);
-    -o-transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
 }
 
 button {
