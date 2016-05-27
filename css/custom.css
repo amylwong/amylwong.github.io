@@ -14,26 +14,29 @@
   display: inline;
 }
 
-.jumbotron {
-  background-image:url('../images/frontbw.jpg');
+.bg {
+  background-image: url('../images/frontbw.jpg');
   height: 750px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.jumbotron .container {
+.bg:hover {
+  background-image: url('../images/front.jpg');
+}
+.bg .container {
   position: relative;
   top:100px;
 }
 
-.jumbotron h1 {
+.bg h1 {
   color: #fff;
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
 }
 
-.jumbotron p {
+.bg p {
   font-size: 20px;
   color: #fff;
 }
