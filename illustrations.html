@@ -5,13 +5,12 @@
   <meta name="description">
   <title>Amy Wong</title>
 
-  <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="css/custom.css" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
   <link rel="shortcut icon" href="favicon.ico" >
+  <script src="js/custom.js"></script>
 </head>
 
 
@@ -22,6 +21,7 @@
             <ul class="pull-left">
               <li><a href="index.html">Amy Wong</a></li>
               <li><a href="index.html#about">About Me</a></li>
+              <li><a href="amy_resume.pdf">Resume</a></li>
             </ul>
             <ul class="pull-right">
               <li><a href="animations.html">Animations</a></li>
@@ -37,20 +37,20 @@
             <br><br><br>
             <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" data-target="#digital">Digital</button>
             <div id="digital" class="collapse">
-            <img src="images/sherlock.jpg" style="cursor:pointer" onclick="showImage(this.src,'images/images/sherlock.jpg');"><br>
-            <img src="images/whiterabbit.png" style="cursor:pointer" onclick="showImage(this.src,'images/images/whiterabbit.png');">
-       
+                <img src="images/sherlock.jpg" class="img-thumbnail" width="550px" style="cursor:pointer" onclick="showImage(this.src,'images/sherlock.jpg');"><br>
+                <img src="images/whiterabbit.jpg" class="img-thumbnail" style="cursor:pointer" onclick="showImage(this.src,'images/whiterabbit.jpg');">
             </div>
+
             <button type="button" class="btn btn-default btn-lg btn-block" data-toggle="collapse" data-target="#traditional">Traditional</button>
             <div id="traditional" class="collapse">
-                <p>Coming soon.
-
-                </p>
+                <img src="images/mokona.jpg" width="360px" class="img-thumbnail" id="illustration" style="cursor:pointer" onclick="showImage(this.src,'images/mokona.jpg');"><br>
+                <img src="images/cf.jpg" width="360px" class="img-thumbnail" id="illustration" style="cursor:pointer" onclick="showImage(this.src,'images/cf.jpg');"><br>
+                <img src="images/carl.jpg" width="360px" class="img-thumbnail" id="illustration" style="cursor:pointer" onclick="showImage(this.src,'images/carl.jpg');">
+            </div>
+            <div id="largeImgPanel" onclick="this.style.display='none'">
+                <img id="largeImg"style="height:100%; margin:0; padding:0;" />
             </div>
 
-           <div id="largeImgPanel" onclick="this.style.display='none'">
-                        <img id="largeImg"style="height:100%; margin:0; padding:0;" />
-                    </div>
 
         </center>
     </div>
